@@ -1,46 +1,47 @@
-## Crontab
-# Comando
+# Crontab
+## Comando
 ~~~
-crontab -e -l
+crontab -e
+crontab -l
 ~~~
 
 * -e : edit
 * -l : list
 
-m         h        dom       mon       dow
-(0-59)  (0-23)    (1-12)   (1-12)     (0-6)
+|m     |h     |dom   |mon   | dow |
+|:----:|:----:|:----:|:----:|:---:|
+|(0-59)|(0-23)|(1-31)|(1-12)|(0-6)|
 
-## Bitacoras
-
-# Comando
+# Bitacoras
+## Comando
 ~~~
 journalctl -n 50
 ~~~
-# Tiempo real: 
+
+## Tiempo real: 
 ~~~
 journalctl -f
 ~~~
 
-
-## Servicios
+# Servicios
 Proceso ejecutándose en 2o. plano
 
-#### **Hardware**
+### **Hardware**
 - Tarjetas
     * Red
     * Sonido
     * Video
 
-#### **Software**
+### **Software**
 - Spotify
 - Word
 - Visual
 
-#### **Estados:** Para verificar como se encuentra un servicio
+### **Estados:** Para verificar como se encuentra un servicio
 - Activación
 - Desactivación
 
-#### **Comando**
+### **Comando**
 ~~~
 sudo systemctl list-unit-files --type service --all
 ~~~
