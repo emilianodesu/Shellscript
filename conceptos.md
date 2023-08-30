@@ -2,6 +2,9 @@
 ## Comando
 ~~~
 crontab -e
+~~~
+
+~~~
 crontab -l
 ~~~
 
@@ -18,7 +21,7 @@ crontab -l
 journalctl -n 50
 ~~~
 
-## Tiempo real: 
+## Tiempo real
 ~~~
 journalctl -f
 ~~~
@@ -46,14 +49,22 @@ Proceso ejecutándose en 2o. plano
 sudo systemctl list-unit-files --type service --all
 ~~~
 
+### **Detener un servicio (Ejemplo: docker)**
 ~~~
 sudo systemctl stop docker
 ~~~
 
+### **Iniciar un servicio (Ejemplo: docker)**
 ~~~
 sudo systemctl start docker
 ~~~
 
+### **Revisar estado de un servicio (Ejemplo: docker)**
 ~~~
 systemctl status docker
+~~~
+
+### **Interface configuration**
+~~~
+ifconfig
 ~~~
