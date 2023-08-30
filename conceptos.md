@@ -45,3 +45,15 @@ Proceso ejecutándose en 2o. plano
 ~~~
 sudo systemctl list-unit-files --type service --all
 ~~~
+
+~~~
+sudo systemctl stop docker
+~~~
+
+~~~
+sudo systemctl start docker
+~~~
+
+~~~
+systemctl status docker
+~~~
